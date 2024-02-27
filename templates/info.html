@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rec-Genre-Info</title>
+    <link rel="stylesheet" href="/static/trans.css">
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            color: white;
+            font-family: monospace;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%,
+             rgba(0, 0, 0, 0.9) 100%), url("/static/img/1.jpg");
+            background-position: center;
+            background-size: contain;
+        }
+        .header{
+            text-align: center;
+            width: max-content;
+            height: min-content;
+            margin: 1% auto;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%,
+             rgba(0, 0, 0, 0.7) 100%);
+            border: none;
+            border: 0.5px solid rgba(0, 0, 0, 1);
+            border-radius: 30px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }        
+        .flex-left {
+            width: 40%;
+            height: fit-content;
+            margin: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%,
+             rgba(0, 0, 0, 0.8) 100%);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            justify-content: center;
+        }
+        .flex-right {
+            width: 60%;
+            height: fit-content;
+            margin: 5px;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%,
+             rgba(0, 0, 0, 0.8) 100%);
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            justify-content: center;
+        }
+        .secondary{
+            width: max-content;
+            height: max-content;
+            border: 0px solid black;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            margin: 5% auto;
+            padding: 5% auto;
+            border-radius: 30px;
+        }
+        .button{
+            text-align: center;
+            margin: 10px;
+            font-family: monospace;
+            background-color: rgba(131, 4, 4, 0.938);           
+            width: fit-content;
+            height: 40px;
+            border: none;
+            border-radius: 50px;
+        }
+        /* @media only screen and (max-width: 540px) {
+            div h1{ 
+                font-size: x-large; 
+            }
+        }
+        @media only screen and (max-width: 425px) {
+            div h1{ 
+                font-size: large; 
+            }
+            div h2{ 
+                font-size: small; 
+            }
+            ol h3{
+                font-size: smaller;
+            }
+        }
+        @media only screen and (max-width: 300px) {
+            div h4{ 
+                font-size: xx-small; 
+            }
+        } */
+        #fx:hover {
+            background-color: #6d0000;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <h1>&emsp;&emsp;&emsp;Rec-A-Flick(Recommend-A-Flick)&emsp;&emsp;&emsp;</h1>
+        </div>    
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div style="text-align: center;"><h2>List of Genres Available</h2></div>
+                <hr>
+                <ul style="text-align: left;">
+                    <h3><li>Action</li></h3>
+                    <h3><li>Animation</li></h3>
+                    <h3><li>Classics</li></h3>
+                    <h3><li>Comedy</li></h3>
+                    <h3><li>Documentary</li></h3>
+                    <h3><li>Drama</li></h3>
+                    <h3><li>Fiction</li></h3>
+                    <h3><li>Horror</li></h3>
+                    <h3><li>International</li></h3>
+                    <h3><li>Kids</li></h3>
+                    <h3><li>Musical</li></h3>
+                    <h3><li>Mystery</li></h3>
+                    <h3><li>Romance</li></h3>
+                    <h3><li>Special</li></h4>
+                    <h3><li>Sports</li></h3>
+                    <h3><li>Television</li></h3>
+                    <h3><li>Western</li></h3>
+                </ul>
+            </div>
+            <div class="flex-right">
+                <div style="text-align: center;"><h2>Information</h2></div>
+                <hr>
+                <ul style="text-align: left;">
+                    <h3><li>A simple Python-Flask based web-application that sends the list of 20 random top rated hollywood/arthouse movies of the genre you choose, from a database of over 1500 movies, to the e-Mail address that you enter.</li></h3>
+                    <h3><li>On your left, you'd find the available genres with movies ready to be recommended and on deciding upon one of them, revisit the HomePage and enter the details.</li></h3>
+                    <h3><li>Apart from this, a button similar to the erstwhile "I'm Feeling Lucky" from Google, upon a click will recommend you the few unreachables of Cinema.</li></h3>
+                </ul>
+                <div class = "secondary">
+                    <a href="/"><button id = "fx" class = "button" style="justify-content: center;"><strong>Back to Home Page</strong></button></a>        
+                </div>
+            </div>
+        </div>
+    </body>
+</head>
+</html>
+    
